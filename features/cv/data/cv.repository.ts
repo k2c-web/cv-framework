@@ -1,5 +1,4 @@
-// app/queries/fetchCV.ts
-import { CVData } from "@/types/cv";
+import { CVData } from "@/features/cv/domain/cv.types";
 
 export async function fetchCV(): Promise<CVData> {
   const res = await fetch("/api/cv");

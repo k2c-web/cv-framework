@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { CVData } from "@/types/cv";
+import { CVData } from "@/features/cv/domain/cv.types";
 
 interface CVProps {
   data: CVData;
 }
 
-export default function CV({ data }: CVProps) {
+export default function CvPage({ data }: CVProps) {
   return (
     <div className="max-w-3xl mx-auto p-10 space-y-12 text-gray-800">
       {/* HEADER */}

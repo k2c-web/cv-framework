@@ -1,5 +1,5 @@
 // app/queries/useCV.ts
-import { fetchCV } from "@/services/cv/fetchCv";
+import { fetchCV } from "@/features/cv/data/cv.repository";
 import { useQuery } from "@tanstack/react-query";
 
 export function useCV() {
