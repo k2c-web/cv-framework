@@ -1,0 +1,219 @@
+{
+  "name": "Kamil Cassam-Chenaï",
+  "title": "Senior Frontend Engineer — React • Next.js • TypeScript",
+  "location": "Paris, Île‑de‑France",
+  "email": "kamil.cassam@live.fr",
+  "phone": "07 81 65 93 44",
+  "linkedin": "linkedin.com/in/k2cweb",
+  "github": "github.com/k2cweb",
+  "about": "Senior Frontend Engineer spécialisé en React, Next.js et TypeScript, avec plus de sept ans d’expérience sur des produits à forte audience (FDJ, Rolex, Tudor, Ekwateur). Habitué aux problématiques d’architecture front, de performance, d’accessibilité et de migrations progressives. J’aime structurer des codebases, améliorer l’expérience utilisateur, fiabiliser les parcours critiques et accompagner les équipes dans des décisions techniques pragmatiques et durables.",
+  "skills": {
+    "Frontend": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES2015+)",
+      "HTML5",
+      "CSS3",
+      "Styled Components",
+      "TailwindCSS",
+      "SCSS"
+    ],
+    "Écosystème React": [
+      "Custom hooks",
+      "Context API",
+      "State colocation",
+      "Patterns de composition",
+      "React Query",
+      "Jotai",
+      "Zustand",
+      "Redux",
+      "React Hook Form",
+      "Storybook"
+    ],
+    "Architecture & Performance": [
+      "Server Components",
+      "Code splitting",
+      "Lazy loading",
+      "Core Web Vitals",
+      "SEO",
+      "Accessibilité (WCAG, ARIA)",
+      "Migrations progressives"
+    ],
+    "APIs & Data": [
+      "APIs REST",
+      "GraphQL",
+      "Gestion du cache client",
+      "Normalisation des données"
+    ],
+    "Qualité & Tests": [
+      "Jest",
+      "Vitest",
+      "React Testing Library",
+      "Playwright",
+      "TDD",
+      "Snapshot testing"
+    ],
+    "Méthodologies": [
+      "Agile",
+      "Pair programming",
+      "Design system",
+      "Documentation",
+      "CI/CD",
+      "Approche fonctionnelle (immutabilité, pure functions)",
+      "Séparation des responsabilités (clean architecture)"
+    ],
+    "Tooling": [
+      "Node.js",
+      "GitHub",
+      "GitLab",
+      "Webpack",
+      "Prismic",
+      "AEM SPA"
+    ]
+  },
+  "experience": [
+    {
+      "company": "CBTW",
+      "role": "Senior Frontend Engineer (Consultant)",
+      "period": "03/2023 – 12/2025",
+      "intro": "Mission long terme en tant que référent front-end sur les produits FDJ UNITED et Ekwateur, avec interventions sur architecture, performance et migrations Next.js.",
+      "missions": [
+        {
+          "company": "FDJ UNITED",
+          "role": "Senior Frontend Engineer",
+          "period": "01/2025 – 12/2025",
+          "intro": "Équipe composée de trois développeurs front-end, d’un PO, d’une testeuse et d’un développeur Drupal transverse. Organisation en Agile Scrum (sprints de trois semaines).",
+          "stack": [
+            "HTML5",
+            "React 18",
+            "Next.js 15/16 (App Router)",
+            "TypeScript",
+            "React Query",
+            "Jotai v2",
+            "TailwindCSS",
+            "Formik",
+            "Lodash-es",
+            "Drupal",
+            "HLS.js",
+            "YouTube Embed",
+            "Jest",
+            "React Testing Library",
+            "ARIA"
+          ],
+          "bullets": [
+            "Adaptation des pages Next.js et composants React aux APIs REST et Drupal pour le lancement de deux nouveaux jeux",
+            "Conception d’une playlist vidéo modulaire compatible HLS et YouTube avec prefetch via React Query",
+            "Refonte du parcours Favoris avec BottomSheet réutilisable et gestion multi‑APIs",
+            "Stabilisation de l’affichage mobile et desktop via séparation des composants et correction des problèmes d’hydratation Next.js",
+            "Amélioration de l’accessibilité via ARIA, navigation clavier et skip links",
+            "Renforcement de la couverture de tests avec Jest et React Testing Library"
+          ]
+        },
+        {
+          "company": "EKWATEUR",
+          "role": "Senior Frontend Engineer",
+          "period": "03/2023 – 09/2024",
+          "intro": "Travail en binôme avec un développeur front-end à distance, en lien direct avec les équipes marketing et SEO. Sprints agiles de deux semaines.",
+          "stack": [
+            "HTML5",
+            "React 18",
+            "Next.js 13/14",
+            "TypeScript",
+            "Prismic",
+            "React Query",
+            "React Hook Form",
+            "Bootstrap (utilitaires)",
+            "Storybook"
+          ],
+          "bullets": [
+            "Refonte du blog v2 en Next.js avec intégration Prismic et optimisations SEO",
+            "Migration de Pages Router vers App Router avec séparation client/server",
+            "Optimisation des performances via réduction du bundle et audits Lighthouse",
+            "Création de la section Auteurs et de composants responsive réutilisables",
+            "Production de stories Storybook et de tests snapshot"
+          ]
+        }
+      ]
+    },
+
+    {
+      "company": "MATCHBOX",
+      "role": "Frontend Engineer",
+      "period": "04/2019 – 01/2023",
+      "intro": "Équipe front-end de 6 à 8 développeurs sur les plateformes Rolex & Tudor, avec exigences premium en performance, UI et stabilité.",
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "React 15→17",
+        "Styled Components",
+        "AEM SPA",
+        "REST APIs",
+        "Adobe DDTM"
+      ],
+      "bullets": [
+        "Migration des sites Rolex et Tudor vers React",
+        "Référent front sur Tudor avec maintenance, évolutions et garantie de la qualité UI",
+        "Refonte du Store Locator puis portage sur rolex.com avec géolocalisation et filtres",
+        "Optimisation des performances via lazy‑loading, mémoïsation et découpage",
+        "Implémentation du tracking analytics via Adobe DTM"
+      ]
+    },
+
+    {
+      "company": "SE LOGER",
+      "role": "Frontend Engineer",
+      "period": "01/2018 – 04/2019",
+      "intro": "Collaboration avec une équipe pluridisciplinaire (front/back, intégratrice, lead dev, PO, testeur) en méthodologie Agile Scrum.",
+      "stack": [
+        "HTML5",
+        "SCSS",
+        "Vue.js 2",
+        "React 15/16",
+        "JavaScript (ES2015+)",
+        "REST APIs",
+        "Redux 4",
+        "Jest",
+        "Enzyme",
+        "Cucumber.js"
+      ],
+      "bullets": [
+        "Migration progressive de Vue.js vers React via vuera",
+        "Développement de parcours utilisateurs avec intégration d’APIs REST",
+        "Maintenance et évolution de modules JavaScript natifs",
+        "Renforcement de la qualité via haute couverture de tests et smoke tests automatisés"
+      ]
+    }
+  ],
+
+  "previousExperience": [
+    {
+      "company": "Fifty-Five",
+      "role": "Développeur JavaScript / Tag Specialist",
+      "period": "2016 – 2017",
+      "intro": "Intégré à une équipe spécialisée dans la data et le tracking pour de grandes marques internationales.",
+      "bullets": [
+        "Implémentation de data layers",
+        "Configuration de TMS (GTM, Adobe DTM)",
+        "Développement de scripts JavaScript pour A/B testing"
+      ]
+    },
+    {
+      "company": "Claranet",
+      "role": "Technicien Support & Développeur Web",
+      "period": "2000 – 2014",
+      "intro": "Dans une BU autonome chargée de la commercialisation d'offres d'hébergement web packagées.",
+      "bullets": [
+        "Support technique multicanal",
+        "Maintenance du site Drupal de la BU",
+        "Coordination avec les équipes infrastructure"
+      ]
+    }
+  ],
+
+  "education": {
+    "school": "IFOCOP",
+    "title": "Développeur / Intégrateur Web",
+    "details": "Certification professionnelle enregistrée au RNCP — 2015"
+  }
+}
