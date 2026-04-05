@@ -1,13 +1,6 @@
+import { getCvFromFile } from "@/infra/fs/getCvFromFile";
 import { CVData } from "@/features/cv/domain/cv.types";
 
 export async function fetchCV(): Promise<CVData> {
-  const res = await fetch("/api/cv");
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch CV");
-  }
-
-  const data = await res.json();
-
-  return data;
+  return getCvFromFile();
 }

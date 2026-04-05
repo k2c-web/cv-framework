@@ -1,5 +1,6 @@
-import cv from "@/infra/fs/cv.json";
+import { getCvFromFile } from "@/infra/fs/getCvFromFile";
 
 export async function GET() {
-  return Response.json(cv);
+  const data = await getCvFromFile();
+  return Response.json(data);
 }
