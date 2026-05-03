@@ -9,9 +9,9 @@
   --foreground: #171717;
 
   /* Accent tokens (Web) */
-  --accent: #6A8FBF;
-  --accent-light: #AFC4E0;
-  --accent-dark: #4F6FA9;
+  --accent: #6a8fbf;
+  --accent-light: #afc4e0;
+  --accent-dark: #4f6fa9;
 }
 
 /* ========================================= */
@@ -64,12 +64,14 @@ body {
 /* ========================================= */
 
 @media print {
-
   /* Accent print-safe */
   :root {
-    --accent: #5A7FAF;
+    --accent: #5a7faf;
   }
 
+  @page {
+    margin-top: 20px; /* Définit la marge de sécurité sur TOUTE la page */
+  }
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -88,17 +90,6 @@ body {
     text-decoration: none !important;
   }
 
-  h1, h2, h3, h4, h5,
-  p, ul, li,
-  section, header, div {
-    page-break-inside: avoid !important;
-  }
-
-  p, li {
-    orphans: 3;
-    widows: 3;
-  }
-
   ul {
     margin-left: 18px !important;
   }
@@ -112,7 +103,11 @@ body {
     color: var(--accent) !important;
   }
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     break-after: avoid-page !important;
   }
 

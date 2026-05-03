@@ -1,6 +1,6 @@
 "use client";
 import { useCV } from "@/features/cv/hooks/useCv";
-import CV from "../features/cv/ui/CvPage";
+import CV from "../features/cv/ui/Cv";
 
 export default function Page() {
   const { data, isLoading, isError } = useCV();

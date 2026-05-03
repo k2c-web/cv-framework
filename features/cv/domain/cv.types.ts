@@ -27,10 +27,8 @@ export interface SimpleExperience {
   role: string;
   period: string;
   intro: string;
-
   stack: string[];
   bullets: string[];
-
   missions?: undefined;
 }
 
@@ -38,12 +36,8 @@ export interface ExperienceWithMissions {
   company: string;
   role: string;
   period: string;
-  intro: string;
-
   missions: MissionEntry[];
-
-  stack?: undefined;
-  bullets?: undefined;
+   bullets: string[];
 }
 
 export type ExperienceEntry = SimpleExperience | ExperienceWithMissions;
