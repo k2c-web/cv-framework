@@ -44,6 +44,10 @@
       "Git (GitHub, GitLab)",
       "Node.js",
       "CI/CD"
+    ],
+    "Langues": [
+      "Français (Maternel)",
+      "Anglais (Intermédiaire B1 - Usage technique)"
     ]
   },
   "experience": [
@@ -51,7 +55,7 @@
       "company": "CBTW",
       "role": "Senior Frontend Engineer",
       "period": "03/2023 - 12/2025",
-      "intro": "Consultant front-end sénior spécialisé en React, interventions comme pivot technique pour assurer la fluidité des parcours critiques et la robustesse des écosystèmes React à grande échelle. Mes missions :",
+      "intro": "Consultant front-end senior spécialisé en React, intervenant comme pivot technique pour sécuriser les parcours critiques, améliorer la performance et renforcer la robustesse des écosystèmes React/Next.js. Mes missions :",
          "stack": [
             "React 18", "Next.js 13→16 (App Router)", "TypeScript", "React Query", "Jotai v2", "TailwindCSS", "Jest", "ARIA", "Prismic", "Storybook", "IA générative, LLM"
           ],

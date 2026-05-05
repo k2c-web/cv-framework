@@ -30,7 +30,7 @@ export const Experience = ({ exp }: { exp: CVData["experience"][number] }) => (
     )}
 
     {"stack" in exp && (
-      <p className="text-[14px] text-gray-700 mt-4">
+      <p className="text-[14px] text-gray-700 mt-4 break-inside-avoid">
         <span className="font-semibold">Stack :</span> {exp.stack.join(", ")}
       </p>
     )}
