@@ -1,0 +1,89 @@
+ [
+    {
+      "company": "Collaboration Betters The World",
+      "role": "Senior Frontend Engineer",
+      "period": "02/2023 - 04/2026",
+      "intro": "Consultant front-end senior dans le cadre de missions sur le long terme. Intervenant comme pivot technique dans des équipes en agile (collaboration dev, produit, design) , focus sur les parcours critiques, la performance, le seo et l'accessibilité",
+         "stack": [
+            "React 18", "Next.js 13 → 16", "TypeScript", "React Query", "TailwindCSS", "Jest", "RTL", "Prismic", "Storybook", "LLM"
+          ],
+      "missions": [
+        {
+          "company": "FDJ United",
+          "intro": "En renfort pour la sortie de 2 nouveaux jeux, avec le rôle de referent dès le départ du dev le plus ancien, d'une des 2 features team en charge de l'application web principale.",
+          "bullets": [
+            "Architecture et développement de fonctionnalités critiques pour le lancement de nouveaux jeux.",
+            "Conception d'une playlist vidéo modulaire optimisée (HLS/YouTube) avec stratégie de prefetch.",
+            "Refonte du parcours Favoris : création de composants UI réutilisables et gestion multi-APIs.",
+            "Amélioration de la robustesse et des Core Web Vitals : correction des problèmes d'hydratation Next.js, remise en SSR de composants critiques et réduction du CLS",
+            "Mise en conformité accessibilité (ARIA, navigation clavier, skip links)."
+          ]
+        },
+        {
+          "company": "Ekwateur",
+          "intro": "En binôme avec un second développeur à distance, avec un rôle central dans la coordination PO / design / marketing / SEO, afin d'améliorer l'acquisition, la performance et la cohérence globale du site.",
+          "bullets": [
+            "Participation à la refonte du blog en Next.js, avec intégration des contributions Prismic via graphQuery",
+            "Migration vers App Router et redécoupage en composants client/server pour réduire le poid du bundle.",
+            "Création de la section Auteurs de la double navigation Particuliers / Professionnels et de la section B2B",
+            "SEO avancée : canonical, structured data (schema.org), sitemap dynamique, robots.txt, optimisation du maillage interne et du budget de crawl",
+            "Optimisation des performances via réduction du bundle et audits Lighthouse"
+          ]
+        },
+        {
+        "company": "Projets Internes",
+        "bullets": [
+          "Questionnaire interactif pour le DevFest 2022 : React Hook Form  et synchronisation API.",
+          "App d'entraînement aux entretiens (POC) assisté par IA : questions et évaluation automatisées."
+        ]
+      }
+      ]
+    },
+    {
+      "company": "MatchBox",
+      "role": "Frontend Engineer",
+      "period": "04/2019 - 01/2023",
+      "intro": "Dans un pôle uniquement front-end, en charge de la maintenance et de l'évolution des web apps Rolex & Tudor, avec exigences premium en matières de performance, UI et stabilité.",
+      "stack": [
+        "React 15 → 17",
+        "JavaScript (ES2015+)",
+        "Styled Components",
+        "JSS Sitecore",
+        "AEM SPA",
+        "REST APIs"
+      ],
+      "bullets": [
+        "Participation à Migration des sites Rolex et Tudor vers React (architecture, design system, conventions)",
+        "Référent react sur la partie Tudor avec maintenance, évolutions et garantie de la qualité UI",
+        "Création de la transition entre les pages de l'app Tudor (navigation fluide, animations, continuité visuelle)",
+        "Accessibilité : navigation clavier, gestion du focus, skip links, amélioration de la structure HTML",
+        "Développement des sections Newsroom et Tudor Mag, en collaboration directe avec l'agence de contenu",
+        "Refonte du Store Locator puis portage sur rolex.com avec synhcron carte / liste, géolocalisation et filtres",
+        "Optimisation des performances via lazy-loading, mémoïsation et découpage"
+      ]
+    },
+    {
+      "company": "SeLoger",
+      "role": "Frontend Engineer",
+      "period": "01/2018 - 04/2019",
+      "intro": "Au sein de la feature team Coaching, en charge des outils d’accompagnement autour de la recherche immobilière. Collaboration avec PO, design et backend en Agile (sprints de 2 semaines).",
+      "stack": [
+        "Vue.js 2",
+        "React 15/16",
+        "JavaScript (ES2015+)",
+        "SCSS",
+        "REST APIs",
+        "Redux 4",
+        "Jest",
+        "Cucumber.js"
+      ],
+      "bullets": [
+  "Maintenance et évolution des calculatrices de financement (PTZ, frais de notaire, crédit).",
+  "Optimisation des formulaires de mise en relation commerciale (déménagement, services associés).",
+  "Développement des modules de mise en avant d'offres partenaires (télécom, énergie) via API.",
+  "Migration progressive de Vue.js vers React via vuera, avec refactorisation progressive des modules.",
+  "Renforcement de la qualité : tests Jest, smoke tests automatisés, stabilisation des parcours critiques."
+]
+
+    }
+  ]

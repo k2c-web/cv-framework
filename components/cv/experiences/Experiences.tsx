@@ -1,16 +1,16 @@
-import { CVData } from "../domain/cv.types";
+import { Experience as ExperiencesProps } from "@/types/cv.types";
+import { Title } from "@/components/ui/Title";
 import { Experience } from "./Experience";
-import { Title } from "./primitives/Title";
 
 export const Experiences = ({
-  experience,
+  experiences,
 }: {
-  experience: CVData["experience"];
+  experiences: ExperiencesProps[];
 }) => (
   <section>
     <Title>Expériences professionnelles</Title>
     <div className="mt-3 space-y-8">
-      {experience.map((exp) => (
+      {experiences.map((exp) => (
         <Experience key={exp.company} exp={exp} />
       ))}
     </div>

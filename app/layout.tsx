@@ -1,7 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import AppProviders from "../providers/appProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cv.kamil.dev"), // adapte à ton domaine
+  metadataBase: new URL("https://cv.kamil.dev"),
   title: {
     default: "Kamil — Senior Frontend Engineer",
     template: "%s | Kamil — Senior Frontend Engineer",
@@ -61,9 +60,9 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "../assets/cv.png",
+    shortcut: "../assets/cv.png",
+    apple: "../assets/cv.png",
   },
 };
 
@@ -77,7 +76,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AppProviders>{children}</AppProviders>
+        {children}
       </body>
     </html>
   );

@@ -1,0 +1,61 @@
+ {
+    "Core Stack": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES2015+)",
+      "HTML5",
+      "CSS3 (Tailwind, Styled Components)"
+    ],
+    "Architecture & Data": [
+      "Architecture modulaire",
+      "Séparation des responsabilités",
+      "Server Components",
+      "React Query",
+      "State Management (Jotai, Zustand, Redux)",
+      "GraphQL",
+      "REST APIs",
+      "Design Systems",
+      "Headless CMS"
+    ],
+    "Qualité & Performance": [
+      "StoryBook",
+      "React Hook Form",
+      "Zod",
+      "Jest",
+      "Vitest",
+      "Playwright",
+      "Code splitting",
+      "Lazy loading",
+      "Core Web Vitals",
+      "Gestion du rendu",
+      "Accessibilité (WCAG, ARIA)",
+      "SEO"
+    ],
+    "Connaissances Backend": [
+      "Node.js",
+      "Express",
+      "Fastify",
+      "PostreSQL"
+    ],
+    "IA & Productivité": [
+      "Prompt Engineering",
+      "Automatisation de tests",
+      "Refactoring assisté",
+      "Documentation générative"
+    ],
+     "Méthodologies & Soft Skills": [
+      "Git",
+      "CI/CD",
+      "Agile Scrum",
+      "Pair programming",
+      "Code review",
+      "Ownership",
+      "Communication",
+      "Collaboration"
+    ],
+    "Langues": [
+      "Français (Maternel)",
+      "Anglais (Intermédiaire B1 - Usage technique)"
+    ]
+  }
