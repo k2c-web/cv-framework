@@ -1,0 +1,58 @@
+{
+  "tasks": [
+    {
+      "id": "task-1",
+      "title": "Intégration Apple Pay",
+      "content": "Ajouter Apple Pay aux options de paiement sur la page de tunnel de commande (Checkout). S'assurer de la compatibilité sur Safari mobile.",
+      "status": "to do"
+    },
+    {
+      "id": "task-2",
+      "title": "Refactoring du Panier (Context API)",
+      "content": "Migrer la gestion de l'état du panier vers un Context global pour éviter le prop-drilling entre la navbar et la fiche produit.",
+      "status": "to do"
+    },
+    {
+      "id": "task-3",
+      "title": "Optimisation SEO des Fiches Produits",
+      "content": "Ajouter les balises de données structurées JSON-LD sur la page produit pour afficher le prix et la disponibilité directement dans Google.",
+      "status": "to do"
+    },
+    {
+      "id": "task-4",
+      "title": "Filtres de recherche par facettes",
+      "content": "Permettre aux utilisateurs de filtrer les vêtements par taille, couleur et plage de prix sur la page catalogue.",
+      "status": "in progress"
+    },
+    {
+      "id": "task-5",
+      "title": "Système de Code Promo",
+      "content": "Créer l'input de code promo dans le récapitulatif de commande avec calcul automatique de la réduction (pourcentage et valeur fixe).",
+      "status": "in progress"
+    },
+    {
+      "id": "task-6",
+      "title": "Page de Profil Utilisateur",
+      "content": "Développer l'onglet 'Mes Commandes' permettant au client de voir l'historique et le statut de livraison de ses anciens achats.",
+      "status": "to test"
+    },
+    {
+      "id": "task-7",
+      "title": "Carousel de la Page d'Accueil",
+      "content": "Mettre en place le bandeau principal de la homepage avec gestion du swipe sur mobile pour mettre en avant la collection d'été.",
+      "status": "to test"
+    },
+    {
+      "id": "task-8",
+      "title": "Avis Clients (Review System)",
+      "content": "Permettre aux utilisateurs connectés de laisser une note de 1 à 5 étoiles et un commentaire écrit sur les produits achetés.",
+      "status": "done"
+    },
+    {
+      "id": "task-9",
+      "title": "Pop-in d'Inscription Newsletter",
+      "content": "Créer la modale d'accroche qui s'ouvre après 10 secondes d'inactivité pour proposer -10% en échange d'une adresse email.",
+      "status": "done"
+    }
+  ]
+}
