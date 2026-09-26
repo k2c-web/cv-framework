@@ -14,7 +14,8 @@
 			"Vitest",
 			"Storybook",
 			"next-intl",
-			"Biome"
+			"Biome",
+			"Claude code"
 		],
 		"bullets": [
 			"Refonte des filtres de recherche et suppression des scintillements via TanStack Query",
