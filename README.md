@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# cv-framework
 
-## Getting Started
+CV interactif de Kamil — Senior Frontend Engineer.
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · 4 dependances.
 
-First, run the development server:
+👉 **En production : https://cv.kamil.dev**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Le principe : 100 % data-driven
+
+Aucun contenu de CV n'est ecrit dans les composants. Tout vient de `data/*.json`,
+qui est type par `types/cv.types.ts` et transforme en props par `app/page.tsx`.
+
+```
+data/*.json  ->  app/page.tsx  ->  components/cv/*  ->  composants d'UI (Liste, Paragraph, Title)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Fichier | Contenu |
+|---|---|
+| `data/profile.json` | nom, titre, localisation, contact, liens, accroche |
+| `data/skills.json` | 8 categories, rendu generiquement par `Object.entries` |
+| `data/experiences.json` | 4 employeurs ; certains portent des `missions` (sous-experiences) |
+| `data/previousExperiences.json` | experiences anterieures |
+| `data/education.json` | formation |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Modifier le CV = editer du JSON.** Aucun composant a toucher.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Demarrer
 
-## Learn More
+```bash
+nvm use          # lit .nvmrc
+npm install
+npm run dev      # http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build      # build de production
+npm run typecheck  # tsc --noEmit
+npm run lint       # eslint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Arborescence
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/
+  layout.tsx        metadata SEO, polices Geist, icones
+  globals.css       palette @theme, polices, styles print
+  page.tsx          lit les JSON, assemble <CV />
+  favicon.ico
+components/
+  cv/               Header, About, Skills, Experiences, PreviousExperiences, Education
+    experiences/    Experience, ExperienceHeader, Mission, Stack
+  ui/               Liste, Paragraph, Title (primitives maison)
+data/               le contenu du CV
+types/cv.types.ts   CVData, Experience, Mission, Education, Skills
+public/
+  assets/photo.jpg  portrait
+  cv.png            favicon (151x151)
+```
 
-## Deploy on Vercel
+## Choix techniques
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Rendu 100 % serveur.** `app/page.tsx` est un Server Component : aucun `useState`,
+  aucun `fetch`, aucun client-side data layer. Le CV est du HTML statique, indexable
+  et instantane. Les donnees sont importees directement (pas de route handler, pas de
+  revalidation) — c'est le bon niveau de complexite pour un contenu versionne en JSON.
+- **3 primitives d'UI maison** (`Liste`, `Paragraph`, `Title`) au lieu de shadcn/ui.
+  Le CV n'a besoin que de trois balises ; 4 composants shadcn (370 lignes) et
+  `lib/utils.ts` ont ete supprimes. `clsx` est la seule dependance de mise en forme.
+- **Palette via `@theme`.** Le CV affiche une palette grise customize. Elle vivait
+  dans `tailwind.config.js`, que Tailwind v4 ne charge pas sans directive `@config` :
+  elle etait donc silencieusement ignoree. Les tokens sont desormais dans
+  `app/globals.css`, ou ils s'appliquent reellement.
+- **Styles print.** `@media print` retire le padding du conteneur et force
+  l'impression des couleurs — le CV sort proprement sur papier.
+- **Polices Geist** injectees par `next/font/google` sur `<html>` (et non `<body>`),
+  car `--font-sans` doit se resoudre sur l'element racine.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Projets voisins
+
+Le depot a ete allegé : ce qui n'etait pas du CV a ete deplace.
+
+| Demo | Ou elle est passee |
+|---|---|
+| Board kanban, React anti-pattern checklist, master/detail users, formulaire d'inscription | `../sprint-board` |
+| API Fastify + Prisma (servait uniquement les demos `/users` et `/signup`) | `../fastify` |
+
+## Points ouverts
+
+- [ ] **Image Open Graph 1200x630 absente.** Le bloc `images` a ete retire de `layout.tsx`
+      plutot que de pointer vers un fichier inexistant : les cartes de partage Twitter/LinkedIn
+      s'affichent donc sans vignette. Generer l'image et rejouer l'ajout.
+- [ ] `data/profile.json` porte un champ `subtitle` que `Header.tsx` ne lit pas.
+- [ ] Aucun test. Le contenu est statique, donc le vrai risque est une typo dans un JSON :
+      un test de non-nullite sur les cloisons de `data/*.json` couvrirait le coup.

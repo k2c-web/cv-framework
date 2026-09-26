@@ -18,7 +18,7 @@ export const PreviousExperiences = ({
             role={exp.role}
             period={exp.period}
           />
-          <Liste items={exp.bullets} className="mt-2" />
+          <Liste items={exp.bullets ?? []} className="mt-2" />
         </div>
       ))}
     </div>

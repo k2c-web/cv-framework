@@ -1,4 +1,4 @@
-import { CVData } from "@/cv.types";
+import { CVData } from "@/types/cv.types";
 import { Title } from "../ui/Title";
 
 export const Education = ({

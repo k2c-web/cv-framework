@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Providers from "./providers";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -13,14 +12,16 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
+const description =
+	"CV interactif de Kamil, Senior Frontend Engineer spécialisé en React, Next.js, TypeScript et architectures modernes.";
+
 export const metadata: Metadata = {
 	metadataBase: new URL("https://cv.kamil.dev"),
 	title: {
 		default: "Kamil - Senior Frontend Engineer",
 		template: "%s | Kamil — Senior Frontend Engineer",
 	},
-	description:
-		"CV interactif de Kamil, Senior Frontend Engineer spécialisé en React, Next.js, TypeScript et architectures modernes.",
+	description,
 	keywords: [
 		"Kamil",
 		"CV",
@@ -36,34 +37,26 @@ export const metadata: Metadata = {
 		index: true,
 		follow: true,
 	},
+	// Pas de bloc `images` : aucune image 1200x630 n'est versionnee.
+	// Referencer un fichier absent produit une carte de partage cassee sur
+	// chaque partage de lien. A ajouter quand l'image sera generee.
 	openGraph: {
 		title: "Kamil — Senior Frontend Engineer",
-		description:
-			"CV interactif de Kamil, Senior Frontend Engineer spécialisé en React, Next.js, TypeScript et architectures modernes.",
+		description,
 		url: "https://cv.kamil.dev",
 		siteName: "CV de Kamil",
 		locale: "fr_FR",
 		type: "website",
-		images: [
-			{
-				url: "/og-image.png", // tu peux générer une image propre plus tard
-				width: 1200,
-				height: 630,
-				alt: "CV de Kamil — Senior Frontend Engineer",
-			},
-		],
 	},
 	twitter: {
-		card: "summary_large_image",
+		card: "summary",
 		title: "Kamil — Senior Frontend Engineer",
-		description:
-			"CV interactif de Kamil, Senior Frontend Engineer spécialisé en React, Next.js, TypeScript et architectures modernes.",
-		images: ["/og-image.png"],
+		description,
 	},
 	icons: {
-		icon: "../assets/cv.png",
-		shortcut: "../assets/cv.png",
-		apple: "../assets/cv.png",
+		icon: "/cv.png",
+		shortcut: "/cv.png",
+		apple: "/cv.png",
 	},
 };
 
@@ -73,12 +66,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="fr">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<Providers>{children}</Providers>
-			</body>
+		<html lang="fr" className={`${geistSans.variable} ${geistMono.variable}`}>
+			<body className="antialiased">{children}</body>
 		</html>
 	);
 }

@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 interface Props {
   company: string;
   role: string;

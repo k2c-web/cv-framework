@@ -1,6 +1,7 @@
 import Image from "next/image";
+import type { CVData } from "@/types/cv.types";
 
-export const Header = ({ data }: { data: any }) => {
+export const Header = ({ data }: { data: CVData["profile"] }) => {
   return (
     <header className="text-slate-500 flex gap-8 items-center">
       <div className="relative w-26 h-26">
