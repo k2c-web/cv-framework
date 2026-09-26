@@ -1,0 +1,20 @@
+[
+    {
+      "company": "Fifty-Five",
+      "role": "Développeur JavaScript / Tag Specialist",
+      "period": "2016 - 2017",
+      "bullets": [
+        "Implémentation de data layers et tracking (GTM, Adobe DTM) pour marques internationales.",
+        "Développement de scripts JS pour campagnes d'A/B testing."
+      ]
+    },
+    {
+      "company": "Claranet",
+      "role": "Technicien Support",
+      "period": "2000 - 2014",
+      "bullets": [
+        "Support technique et maintenance du site Drupal de la Business Unit.",
+        "Coordination avec les équipes infrastructure pour les offres d'hébergement."
+      ]
+    }
+  ]
